@@ -1,8 +1,18 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  font-size: 18px
+}
+
+.container{
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  max-width: 450px;
 }
 
 h1 {
-  color: #333;
+  font-size: 2rem;
+  text-align: center;
+  color: #0099ff;
+  margin-bottom: 20px;
 }

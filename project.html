@@ -17,11 +17,12 @@
     }
     nav {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       background-color: gray;
       height: 70px;
       padding: 0 20px;
+      position: relative;
     }
     .navbar, .icons {
       display: flex;
@@ -69,12 +70,18 @@
       text-align: center;
       padding: 10px 0;
     }
+    .logo {
+      position: absolute;
+      left: 20px;
+    }
   </style>
 </head>
 <body>
   <nav>
     <div class="logo">
-      <a href="index.html">LoGo</a>
+      <a href="index.html">
+        <img src="../images/logo_84.png" alt="LoGo" style="height: 50px;">
+      </a>
     </div>
     <div class="navbar">
       <ul>
@@ -85,11 +92,6 @@
         <li><a href="https://github.com/wooxexn">Github</a></li>
       </ul>
     </div>
-    <div class="icons">
-      <ul>
-        <li><a href="#">아이콘</a></li>
-      </ul>
-    </div>
   </nav>
   <main>
     <div class="container">
@@ -98,10 +100,12 @@
         <p>새로운 도전에도 적극적으로 참여하고자 노력하고 있어요.</p>
       </div>
       <div class="image">
-        <img src="../wooseon.github.io/images/banner_project.png" alt="">
+        <img src="../images/banner_project.png" alt="">
       </div>
     </div>
   </main>
-  <footer> 하단 부분 </footer>
+  <footer>
+    <p>&copy; 2024 Jeon Woo-Seon. All rights reserved.</p>
+  </footer>
 </body>
 </html>

@@ -5,10 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    *{
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     nav {
       display: flex;
@@ -16,7 +21,7 @@
       align-items: center;
       background-color: gray;
       height: 70px;
-      padding: 0 20px; 
+      padding: 0 20px;
     }
     .navbar, .icons {
       display: flex;
@@ -35,15 +40,37 @@
       font-size: 18px;
     }
     main {
-      height: 500px;
+      flex: 1;
       background-color: whitesmoke;
+      padding: 20px;
     }
-    main img {
-      height: 300px;
+    .container {
+      display: flex;
+      align-items: center;
+      padding: 20px 0;
+    }
+    .content-box {
+      background-color: #333;
+      color: white;
+      border-radius: 15px;
+      padding: 20px;
+      margin-right: 20px;
+      flex: 1;
+    }
+    .content-box p {
+      margin: 0;
+    }
+    .image {
+      flex-shrink: 0;
+    }
+    .image img {
+      max-height: 100px;
     }
     footer {
-      background-color: white;
-      color: white; 
+      background-color: gray;
+      color: black;
+      text-align: center;
+      padding: 10px 0;
     }
   </style>
 </head>
@@ -67,9 +94,18 @@
       </ul>
     </div>
   </nav>
-  <main> 블로그 공부하는 내용 공유 <br>
-    <img src="../wooseon.github.io/images/f31a86fd-56a5-4cbe-b064-01ae448c9292.webp" alt="">
+  <main>
+    <div class="container">
+      <div class="content-box">
+        <p>연구하거나 공부한 것을 기록하는 공간입니다.</p>
+        <p>배움은 나눌수록 커지잖아요</p>
+      </div>
+      <div class="image">
+        <img src="../wooseon.github.io/images/banner_post.png" alt="">
+      </div>
+    </div>
   </main>
   <footer> 하단 부분 </footer>
 </body>
 </html>
+

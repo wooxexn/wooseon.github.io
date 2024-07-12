@@ -5,10 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    *{
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     nav {
       display: flex;
@@ -16,7 +21,7 @@
       align-items: center;
       background-color: gray;
       height: 70px;
-      padding: 0 20px; 
+      padding: 0 20px;
     }
     .navbar, .icons {
       display: flex;
@@ -35,12 +40,34 @@
       font-size: 18px;
     }
     main {
-      height: 500px;
+      flex: 1;
       background-color: whitesmoke;
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      padding: 20px 0;
+    }
+    .content-box {
+      background-color: #333;
+      color: white;
+      border-radius: 15px;
+      padding: 20px;
+      margin-right: 20px;
+      flex: 1;
+    }
+    .image {
+      flex-shrink: 0;
+    }
+    .image img {
+      max-height: 100px;
     }
     footer {
-      background-color: white;
-      color: white; 
+      background-color: gray;
+      color: black;
+      text-align: center;
+      padding: 10px 0;
     }
   </style>
 </head>
@@ -64,5 +91,8 @@
       </ul>
     </div>
   </nav>
+  <main>
+  </main>
+  <footer> 하단 부분 </footer>
 </body>
 </html>
